@@ -29,7 +29,13 @@ escolher qual o plano FaleMais. O sistema deve mostrar dois valores: 
 
 (1) o valor da ligação com o plano e (2) sem o plano.
 
-![Valores dos Planos](https://i.imgur.com/1j8LkJ2.png)
+| Origem        | Destino       | Tempo | Plano FaleMais | Com FaleMais | Sem FaleMais |
+| ------------- |:-------------:| -----:| --------------:| ------------:| ------------:|
+| 011           | 016           |   20  | FaleMais 30    | $ 0.00       | $ 38.00      |
+| 011           | 017           |   80  | FaleMais 60    | $ 37.40      | $ 136.00     |
+| 018           | 011           |  200  | FaleMais 120   | $ 167.20     | $ 380.00     |
+| 018           | 017           |  100  | FaleMais 30    | -            | -            |
+
 
 *Obs: O Backend está exposto em 2 rotas:*
 
@@ -62,13 +68,14 @@ https://angular.io/guide/styleguide
 ## Extras
 
 - Interface gráfica bem acabada
+- Uso de algum pré-processador de CSS (usamos o `SASS`)
 - Uso avançado de TypeScript e/ou Angular
 - Boas práticas e patterns de `RxJS` 
 - Testes e2e e unitários
 - Tente usar as boas práticas de codificação e se sinta a vontade caso queira extender um
     pouco os requisitos para mostrar seus conhecimentos.
 
-Sinta-se livre para utilizar qualquer biblioteca externa, principalmente para os testes.
+Sinta-se livre para utilizar qualquer biblioteca externa, incluindo o [Angular Material](https://material.angular.io/) e qualquer lib para testes.
 
 ## Como começar
 
